@@ -39,11 +39,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           <picture>
             <img src={logo} className="img-fluid logo" alt="brand"/>
           </picture>
-          {/* <span className="purple">Rs</span> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
