@@ -17,7 +17,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              In the last 5 years, I worked primarily on complex Javascript web applications.
+              I have over 5 years of experience in fullstack development, leading teams, and delivering high-performance web applications across diverse industries.
               In this period I become intimately familiar with Javascript, its ecosystem, and writing high-performance, maintainable, and scalable web apps.
               <br />
               <br />
@@ -47,9 +47,9 @@ function Home2() {
               </i>.
               My database expertise extends to
               <i>
-                <b className="purple">{" "}MongoDB and PostgreSQL</b>
+                <b className="purple">{" "}MySQL, MongoDB and PostgreSQL</b>
               </i>,
-              while I am well-versed in utilizing <i><b className="purple">AWS</b></i> for cloud services."
+              while I am well-versed in utilizing <i><b className="purple">AWS</b></i> for cloud services.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
