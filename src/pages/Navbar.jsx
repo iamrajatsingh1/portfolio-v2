@@ -10,9 +10,10 @@ import {
   AiOutlineUser,
 } from 'react-icons/ai';
 import { CgGitFork, CgFileDocument } from 'react-icons/cg';
-import { ImBlog } from 'react-icons/im';
+// import { ImBlog } from 'react-icons/im';
+import { IoMdOpen } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import logo from '../assets/rs-logo.webp';
+import logo from '../temp-assets/rs-logo.webp';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -98,7 +99,9 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: '2px' }} /> Blogs
+                <IoMdOpen style={{ fontSize: '1.0em', marginRight: '3px' }} />
+                {/* <ImBlog style={{ marginBottom: '2px' }} />  */}
+                Blogs
               </Nav.Link>
             </Nav.Item>
 

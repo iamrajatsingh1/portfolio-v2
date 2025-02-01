@@ -5,7 +5,7 @@ import Aboutcard from './components/AboutCard.jsx';
 import Github from './components/Github.jsx';
 import Techstack from './components/Techstack.jsx';
 import Toolstack from './components/Toolstack.jsx';
-import laptopImg from '../../assets/about.png';
+import laptopImg from '../../temp-assets/about.png';
 
 function AboutPage() {
   return (
