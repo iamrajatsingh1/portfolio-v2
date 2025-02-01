@@ -2,8 +2,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiMedium } from 'react-icons/si';
-// import Tilt from 'react-parallax-tilt';
-import myImg from '../../../assets/rajat_singh_avatar.png';
+import { Tilt } from 'react-tilt';
+import myImg from '../../../temp-assets/rajat_singh_avatar.png';
 
 function IntroductionComponent() {
   return (
@@ -11,7 +11,7 @@ function IntroductionComponent() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: '2.6rem' }}>
+            <h1 style={{ fontSize: '2.6em' }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
@@ -68,9 +68,9 @@ function IntroductionComponent() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            {/* <Tilt> */}
-            <img src={myImg} className="img-fluid" alt="avatar" />
-            {/* </Tilt> */}
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
           </Col>
         </Row>
         <Row>

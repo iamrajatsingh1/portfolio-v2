@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
-import ResumeInPdf from '../../assets/rajat_singh_sse.pdf';
+import ResumeInPdf from '../../temp-assets/rajat_singh_sse.pdf';
 import Particle from '../Particle.jsx';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;

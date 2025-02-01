@@ -1,12 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Particle from '../Particle.jsx';
 import ProjectCard from './components/ProjectCards.jsx';
-import bitsOfCode from '../../assets/Projects/blog.png';
-import chatify from '../../assets/Projects/chatify.png';
-import editor from '../../assets/Projects/codeEditor.png';
-import emotion from '../../assets/Projects/emotion.png';
-import leaf from '../../assets/Projects/leaf.png';
-import suicide from '../../assets/Projects/suicide.png';
+import bitsOfCode from '../../temp-assets/Projects/blog.png';
+import chatify from '../../temp-assets/Projects/chatify.png';
+import editor from '../../temp-assets/Projects/codeEditor.png';
+import emotion from '../../temp-assets/Projects/emotion.png';
+import leaf from '../../temp-assets/Projects/leaf.png';
+import suicide from '../../temp-assets/Projects/suicide.png';
 
 function ProjectsPage() {
   return (
