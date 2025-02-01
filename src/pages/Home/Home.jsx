@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import homeLogo from '../../temp-assets/home-main.svg';
+import Avatar from '../../temp-assets/rajat_singh_avatar.png';
 import Particle from '../Particle.jsx';
 import IntroductionComponent from './components/Introduction.jsx';
 import Type from './components/Type.jsx';
@@ -31,8 +31,8 @@ const Homepage = () => {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
-                alt="home pic"
+                src={Avatar}
+                alt="avatar"
                 className="img-fluid"
                 style={{ maxHeight: '450px' }}
               />

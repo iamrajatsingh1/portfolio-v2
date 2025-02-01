@@ -305,13 +305,13 @@ button:focus {
   }
 }
 
-.myAvtar {
+.study-desk-illustration {
   justify-content: center !important;
   padding-top: 9em !important;
 }
 
 @media (max-width: 767px) {
-  .myAvtar {
+  .study-desk-illustration {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
   }

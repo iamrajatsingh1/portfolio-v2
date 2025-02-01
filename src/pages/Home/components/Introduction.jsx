@@ -2,8 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiMedium } from 'react-icons/si';
-import { Tilt } from 'react-tilt';
-import myImg from '../../../temp-assets/rajat_singh_avatar.png';
+import studyDeskIllustration from '../../../temp-assets/home-main.svg';
 
 function IntroductionComponent() {
   return (
@@ -67,10 +66,12 @@ function IntroductionComponent() {
               for cloud services.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={4} className="study-desk-illustration">
+            <img
+              src={studyDeskIllustration}
+              className="img-fluid"
+              alt="study-desk-illustration"
+            />
           </Col>
         </Row>
         <Row>
