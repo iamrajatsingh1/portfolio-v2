@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import myImg from '../../../assets/rajat_singh_avatar.png';
-import Tilt from 'react-parallax-tilt';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiMedium } from 'react-icons/si';
+import Tilt from 'react-parallax-tilt';
+import myImg from '../../../assets/rajat_singh_avatar.png';
 
 function IntroductionComponent() {
   return (
