@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiMedium } from 'react-icons/si';
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
 import myImg from '../../../assets/rajat_singh_avatar.png';
 
 function IntroductionComponent() {
@@ -11,22 +11,22 @@ function IntroductionComponent() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: '2.6em' }}>
+            <h1 style={{ fontSize: '2.6rem' }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I have nearly 6 years of experience in fullstack development,
-              leading teams, and delivering high-performance web applications
-              across diverse industries. In this period I become intimately
-              familiar with Javascript, its ecosystem, and writing
-              high-performance, maintainable, and scalable web apps.
+              I have around 6 years of experience in fullstack development,
+              leading teams, and delivering high-performance applications across
+              diverse industries. I am highly familiar with JavaScript and its
+              ecosystem, and excel in building high-performance, maintainable,
+              and scalable apps.
               <br />
               <br />
               While I love building
               <i>
-                <b className="purple"> Web applications</b>
+                <b className="purple"> applications</b>
               </i>
-              , &apos;m equally passionate about{' '}
+              , I&apos;m equally passionate about{' '}
               <i>
                 <b className="purple">Mentorship</b>
               </i>
@@ -45,17 +45,22 @@ function IntroductionComponent() {
               <br />
               On the frontend, I excel in
               <i>
-                <b className="purple"> VanillaJs, React.js, and Next.js</b>
+                <b className="purple">
+                  {' '}
+                  VanillaJs, React.js, Next.js, HTML, CSS.
+                </b>
               </i>
-              . For backend development, I am proficient in
+              <br />
+              For backend development, I am proficient in
               <i>
-                <b className="purple"> Node.js and Nest.js</b>
+                <b className="purple"> Node.js and Nest.js.</b>
               </i>
-              . My database expertise extends to
+              <br />
+              My database expertise extends to
               <i>
-                <b className="purple"> MySQL, MongoDB and PostgreSQL</b>
+                <b className="purple"> MySQL, MongoDB and PostgreSQL.</b>
               </i>
-              , while I am well-versed in utilizing{' '}
+              <br />I am also well-versed in utilizing{' '}
               <i>
                 <b className="purple">AWS</b>
               </i>{' '}
@@ -63,9 +68,9 @@ function IntroductionComponent() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+            {/* <Tilt> */}
+            <img src={myImg} className="img-fluid" alt="avatar" />
+            {/* </Tilt> */}
           </Col>
         </Row>
         <Row>

@@ -8,8 +8,8 @@ import {
 import AboutPage from './pages/About/index';
 import Footer from './pages/Footer.jsx';
 import HomePage from './pages/Home/index';
+import Loader from './pages/Loader.jsx';
 import Navbar from './pages/Navbar.jsx';
-import Preloader from './pages/Pre.jsx';
 import ProjectsPage from './pages/Projects/index';
 import ResumePage from './pages/Resume/index';
 import ScrollToTop from './pages/ScrollToTop';
@@ -18,11 +18,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      setIsLoading(false);
     }, 1200);
 
     return () => clearTimeout(timer);
@@ -30,8 +30,8 @@ function App() {
 
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? 'no-scroll' : 'scroll'}>
+      <Loader isLoading={isLoading} />
+      <div className="App" id={isLoading ? 'no-scroll' : 'scroll'}>
         <Navbar />
         <ScrollToTop />
         <Routes>

@@ -22,7 +22,7 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -61,7 +61,7 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <CgCPlusPlus />
       </Col>
     </Row>
   );

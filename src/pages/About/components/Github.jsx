@@ -1,5 +1,5 @@
-import GitHubCalendar from 'react-github-calendar';
 import { Row } from 'react-bootstrap';
+import GitHubCalendar from 'react-github-calendar';
 
 function Github() {
   return (

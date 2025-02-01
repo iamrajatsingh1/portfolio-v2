@@ -20,7 +20,7 @@ const Homepage = () => {
               </h1>
 
               <h1 className="heading-name">
-                &apos;m
+                I&apos;m
                 <strong className="main-name"> Rajat Singh</strong>
               </h1>
 
