@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+import { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+  Navigate,
+} from 'react-router-dom';
+import AboutPage from './pages/About/index';
+import Footer from './pages/Footer.jsx';
+import HomePage from './pages/Home/index';
+import Navbar from './pages/Navbar.jsx';
+import Preloader from './pages/Pre.jsx';
+import ProjectsPage from './pages/Projects/index';
+import ResumePage from './pages/Resume/index';
+import ScrollToTop from './pages/ScrollToTop';
+import './style.css';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -31,15 +31,15 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className="App" id={load ? 'no-scroll' : 'scroll'}>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

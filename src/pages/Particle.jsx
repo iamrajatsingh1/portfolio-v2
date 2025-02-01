@@ -1,7 +1,6 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import Particles from 'react-tsparticles';
 
-function Particle() {
+const Particle = () => {
   return (
     <Particles
       id="tsparticles"
@@ -19,7 +18,7 @@ function Particle() {
             opacity: 0.03,
           },
           move: {
-            direction: "right",
+            direction: 'right',
             speed: 0.05,
           },
           size: {
@@ -37,7 +36,7 @@ function Particle() {
           events: {
             onclick: {
               enable: true,
-              mode: "push",
+              mode: 'push',
             },
           },
           modes: {
@@ -50,6 +49,6 @@ function Particle() {
       }}
     />
   );
-}
+};
 
 export default Particle;
