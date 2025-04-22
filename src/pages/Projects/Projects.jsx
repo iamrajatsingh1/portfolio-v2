@@ -4,9 +4,9 @@ import ProjectCard from './components/ProjectCards.jsx';
 import bitsOfCode from '../../temp-assets/Projects/blog.png';
 import chatify from '../../temp-assets/Projects/chatify.png';
 import editor from '../../temp-assets/Projects/codeEditor.png';
-import emotion from '../../temp-assets/Projects/emotion.png';
-import leaf from '../../temp-assets/Projects/leaf.png';
-import suicide from '../../temp-assets/Projects/suicide.png';
+// import emotion from '../../temp-assets/Projects/emotion.png';
+// import leaf from '../../temp-assets/Projects/leaf.png';
+// import suicide from '../../temp-assets/Projects/suicide.png';
 
 function ProjectsPage() {
   return (
@@ -24,10 +24,41 @@ function ProjectsPage() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
+              title="InvestRight by HDFC Securities"
+              description="A web trading platform with Advanced Trading Features & Fast Execution."
+              demoLink="https://investright.hdfcsec.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="InvestNow by HDFC Securities"
+              description="HDFC Netbanking - Investment platform - Mutual Funds, Portfolio, Goal Planning, Global investing"
+              demoLink="https://www.hdfcsec.com/investnow-invest-in-mutual-funds"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="slice"
+              description="slice - A new bank, for a new India"
+              demoLink="https://www.sliceit.com/"
+            />
+          </Col>
+        </Row>
+        {/* <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatify}
+              isBlog={false}
               title="Chatify"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/#/Chatify"
-              // demoLink="#" <--------Please include a demo link here
+              // ghLink="https://github.com/#/Chatify"
+              demoLink="#" //<--------Please include a demo link here
             />
           </Col>
 
@@ -37,8 +68,8 @@ function ProjectsPage() {
               isBlog={false}
               title="Bits-0f-C0de"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/#/Bits-0f-C0de"
-              // demoLink="#" <--------Please include a demo link here
+              // ghLink="https://github.com/#/Bits-0f-C0de"
+              demoLink="#" //<--------Please include a demo link here
             />
           </Col>
 
@@ -86,7 +117,7 @@ function ProjectsPage() {
               // demoLink="#"      <--------Please include a demo link here
             />
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );

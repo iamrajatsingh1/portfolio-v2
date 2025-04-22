@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Container, Row, Col } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -14,7 +15,7 @@ function IntroductionComponent() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I have around 6 years of experience in fullstack development,
+              I have 6+ years of experience in fullstack development,
               leading teams, and delivering high-performance applications across
               diverse industries. I am highly familiar with JavaScript and its
               ecosystem, and excel in building high-performance, maintainable,
